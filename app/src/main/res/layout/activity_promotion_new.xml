@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context=".Manager.PromotionNewActivity">
+
+
+    <EditText
+        android:id="@+id/et_promo_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/layout_bg"
+        android:fontFamily="@font/poppins_light"
+        android:hint="Promotion title"
+        android:inputType="none"
+        android:paddingLeft="10dp"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp"
+        android:fontFamily="@font/poppins_light"
+        android:paddingLeft="20dp"
+        android:text="Enter promotion title"
+        android:textColor="#535169"
+        android:textSize="12sp" />
+
+
+    <EditText
+        android:id="@+id/et_promo_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/layout_bg"
+        android:fontFamily="@font/poppins_light"
+        android:gravity="top|left"
+        android:inputType="textMultiLine"
+        android:lines="8"
+        android:maxLines="10"
+        android:minLines="6"
+        android:hint="Enter new Promotion"
+        android:paddingLeft="20dp"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp"
+        android:fontFamily="@font/poppins_light"
+        android:paddingLeft="20dp"
+        android:text="Enter the promotion"
+        android:textColor="#535169"
+        android:textSize="12sp" />
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="10dp"
+        android:elevation="8dp"
+        app:cardCornerRadius="30dp">
+
+        <TextView
+            android:id="@+id/btn_addPromotion"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#2C2928"
+            android:clickable="true"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center"
+            android:text="Add New Promotion"
+            android:onClick="addPromo"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context=".Manager.ManagerHomeActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="10dp"
+        android:elevation="8dp"
+        app:cardCornerRadius="30dp">
+
+        <TextView
+            android:id="@+id/btn_mnge_products"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#24607A"
+            android:clickable="false"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center"
+            android:text="MANAGE PRODUCTS"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="10dp"
+        android:elevation="8dp"
+        app:cardCornerRadius="30dp">
+
+        <TextView
+            android:id="@+id/btn_mnge_promotions"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#24607A"
+            android:clickable="false"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center"
+            android:text="MANAGE PROMOTIONS"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

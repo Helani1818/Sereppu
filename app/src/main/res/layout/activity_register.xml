@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingRight="10dp"
+    android:paddingLeft="10dp"
+    android:orientation="vertical"
+    tools:context=".RegisterActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="160dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/serappu" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <EditText
+                android:id="@+id/et_name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:inputType="none"
+                android:fontFamily="@font/poppins_light"
+                android:background="@drawable/layout_bg"
+                android:textSize="16sp"
+                android:hint="Name"/>
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_light"
+                android:paddingLeft="20dp"
+                android:layout_marginBottom="6dp"
+                android:textSize="12sp"
+                android:textColor="#535169"
+                android:text="Enter your full name" />
+
+            <EditText
+                android:id="@+id/et_email"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:inputType="none"
+                android:fontFamily="@font/poppins_light"
+                android:background="@drawable/layout_bg"
+                android:textSize="16sp"
+                android:hint="Email"/>
+
+            <TextView
+                android:id="@+id/tv_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_light"
+                android:paddingLeft="20dp"
+                android:layout_marginBottom="6dp"
+                android:textSize="12sp"
+                android:textColor="#535169"
+                android:text="Enter your email" />
+
+            <EditText
+                android:id="@+id/et_usrname"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:inputType="none"
+                android:fontFamily="@font/poppins_light"
+                android:background="@drawable/layout_bg"
+                android:textSize="16sp"
+                android:hint="Username"/>
+
+            <TextView
+                android:id="@+id/tv_usrname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_light"
+                android:paddingLeft="20dp"
+                android:layout_marginBottom="6dp"
+                android:textSize="12sp"
+                android:textColor="#535169"
+                android:text="Enter a unique username" />
+
+            <EditText
+                android:id="@+id/et_pswd"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:inputType="none"
+                android:fontFamily="@font/poppins_light"
+                android:background="@drawable/layout_bg"
+                android:textSize="16sp"
+                android:hint="Password"/>
+
+            <TextView
+                android:id="@+id/tv_pswd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_light"
+                android:paddingLeft="20dp"
+                android:layout_marginBottom="6dp"
+                android:textSize="12sp"
+                android:textColor="#535169"
+                android:text="Enter your password" />
+
+            <EditText
+                android:id="@+id/et_confirm_pwd"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:inputType="none"
+                android:fontFamily="@font/poppins_light"
+                android:background="@drawable/layout_bg"
+                android:textSize="16sp"
+                android:hint="Confirm Password"/>
+
+            <TextView
+                android:id="@+id/tv_confirm_pwd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_light"
+                android:paddingLeft="20dp"
+                android:layout_marginBottom="6dp"
+                android:textSize="12sp"
+                android:textColor="#535169"
+                android:text="Enter password again to confirm" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                android:elevation="8dp"
+                app:cardCornerRadius="25dp">
+
+                <TextView
+                    android:id="@+id/btn_register"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#97918E"
+                    android:clickable="false"
+                    android:fontFamily="@font/poppins_medium"
+                    android:gravity="center"
+                    android:text="REGISTER"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp" />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/link_reg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@font/poppins_light"
+                android:gravity="center|bottom"
+                android:textStyle="bold"
+                android:layout_marginTop="15dp"
+                android:textSize="15sp"
+                android:clickable="true"
+                android:focusable="true"
+                android:textColor="#B15075"
+                android:text="I am a Member" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
